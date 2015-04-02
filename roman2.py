@@ -2,3 +2,7 @@
 
 class OutOfMemoryError(ValueError):
 	pass
+
+class OutOfRangeError(ValueError):
+	pass
+
