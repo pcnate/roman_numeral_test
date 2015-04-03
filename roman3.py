@@ -20,6 +20,9 @@ def to_roman(n):
     if n > 3999:
         raise OutOfRangeError('number out of range (must be less than 4000)')
 
+    if n <= 0:
+        raise OutOfRangeError('number out of range (must be greater than 0)')
+
     result = ''
     for numeral, integer in roman_numeral_map:
         while n >= integer:
